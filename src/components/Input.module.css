@@ -1,0 +1,30 @@
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1.25rem;
+}
+
+.formField input {
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  outline: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.1s;
+}
+
+.formField input:focus, .formField input:hover {
+  outline: none;
+  border: 2px solid var(--pink);
+}
+
+.formField input.error {
+  outline: none;
+  border: 2px solid red;
+}
+
+.formField small {
+  color: red;
+}
